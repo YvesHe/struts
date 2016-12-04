@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 自定义Struts1的配置文件 -->
+<struts-config>
+	<form-beans>
+		<form-bean name="loginForm" type="cn.com.yves.bean.UserBean" />
+	</form-beans>
+
+	<action-mappings>
+		<action name="loginForm" path="/login" scope="request"
+			type="cn.com.yves.action.LoginAction">
+			<forward name="error" path="pages/errorPage/error.jsp" />
+			<forward name="result" path="pages/success.jsp" />
+		</action>
+	</action-mappings>
+</struts-config>

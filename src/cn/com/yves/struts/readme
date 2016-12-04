@@ -1,0 +1,14 @@
+该包下:是自己实现的简单的Struts框架:
+
+1.所有的请求会进ActionServlet
+
+
+这个包下是自己实现的Struts框架:
+用到的技术有:
+
+读取xml文件
+对servlet的封装:
+
+
+首先:
+1.LoadConfig类把Struts.xml配置文件的信息加载,放在ConfigBean中.
